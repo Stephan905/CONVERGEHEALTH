@@ -1,20 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-
-import convergelogo from "./images/convergehealth.png";
 import { Link } from "react-router-dom";
+import Countdown from "./Countdown";
+import StaticHeader from "./StaticHeader";
 
 function App() {
+  // Goal date (you can change this as needed)
+  const goalDate = new Date(2024, 11-1, 20, 18,0); // year, month, day, hours, minutes, seconds
+  console.log(goalDate.toLocaleDateString())
+  console.log(goalDate.toTimeString())
 
   return (
     <>
-      <div className="header">
-        <img src={convergelogo} height={"90%"} />
-      </div>
+      <StaticHeader />
       <div className="content">
-        <div className="countdown">COUNTDOWN 00:00:00</div>
+
+        <Countdown goalDate={goalDate}/>
+
         <div className="intro">
           MAIN BODY TEXT GOES HERE, INTRODUCTION INTO THE CONFRENCE
         </div>

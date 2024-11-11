@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Abstract from './abstract.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from './About.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/abstract' element={<Abstract />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
