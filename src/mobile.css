@@ -1,0 +1,80 @@
+.mobile {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  background-image: url("./images/lowKGradient.gif");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.mobile-header {
+  position: absolute;
+  height: 30%;
+  top: 0;
+  z-index: 5;
+  transition-duration: 2s;
+  width: 88%;
+  background: none;
+}
+
+.mobile-header.full {
+  height: 100%;
+  width: 100%;
+  animation: pulse 4.4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
+  box-sizing: border-box;
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  transition-delay: 1.5s;
+  transition-duration: 1s;
+}
+
+.mobile-nav.full {
+  opacity: 0;
+}
+
+.mobile-button {
+  background-color: white;
+  color:#4f00b6;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  letter-spacing: 5px;
+}

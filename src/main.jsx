@@ -5,13 +5,14 @@ import App from './App.jsx'
 import Abstract from './abstract.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from './About.jsx'
+import MobileHome from './MobileHome.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/abstract' element={<Abstract />} />
+        <Route path='/abstract' element={<MobileHome />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </BrowserRouter>
