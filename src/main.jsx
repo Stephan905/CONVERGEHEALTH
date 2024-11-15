@@ -1,20 +1,20 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import Abstract from './abstract.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from './About.jsx'
-import MobileHome from './MobileHome.jsx'
+import AboutRoute from "./AboutRoute.jsx";
+import { AnimationProvider } from "./AnimateContext.jsx";
+import './index.css';
+import App from './App.jsx';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/abstract' element={<MobileHome />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>,
-)
+    <AnimationProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<AboutRoute />} />
+        </Routes>
+      </BrowserRouter>
+    </AnimationProvider>
+  </StrictMode>
+);

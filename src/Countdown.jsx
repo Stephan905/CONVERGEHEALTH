@@ -20,7 +20,7 @@ export default function Countdown({ goalDate }) {
         setSeconds(0);
         return;
       }
-      console.log(diff);
+      // console.log(diff);
       const d = Math.floor(diff / (1000 * 60 * 60 * 24));
       diff -= d * (1000 * 60 * 60 * 24);
 

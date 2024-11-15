@@ -2,6 +2,8 @@
   position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   background-image: url("./images/lowKGradient.gif");
@@ -9,6 +11,12 @@
   background-position: center;
 
   overflow: hidden;
+
+  font-size: 1rem;
+}
+
+.mobile-content {
+  width: 80%;
 }
 
 .mobile-header {
@@ -25,6 +33,10 @@
   height: 100%;
   width: 100%;
   animation: pulse 4.4s infinite ease-in-out;
+}
+
+.mobile-header.slim-view {
+  height: 20%;
 }
 
 @keyframes pulse {
@@ -55,12 +67,12 @@ img {
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  padding: 90px 0;
   box-sizing: border-box;
   height: 70%;
-  width: 80%;
+  width: 70%;
   position: absolute;
   bottom: 0;
+  margin-bottom: 20px;
   z-index: 3;
   transition-delay: 1.5s;
   transition-duration: 1s;
@@ -70,11 +82,22 @@ img {
   opacity: 0;
 }
 
+.mobile-nav.slim-view {
+  height: 80%;
+}
+
 .mobile-button {
   background-color: white;
   color:#4f00b6;
-  padding: 10px;
+  padding: 8px;
   font-weight: bold;
   margin: 0 0 20px 0;
   letter-spacing: 5px;
+}
+
+.more-info {
+  padding: 8px;
+  background-color: white;
+  color:#4f00b6;
+  margin: 20px 0;
 }

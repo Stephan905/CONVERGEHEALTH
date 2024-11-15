@@ -2,10 +2,12 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import Countdown from "./Countdown";
 import StaticHeader from "./StaticHeader";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import convergelogo from "./images/convergehealth.png";
+import { AnimationContext } from "./AnimateContext";
 
 export default function Home() {
+  const {isAnimating, setIsAnimating } = useContext(AnimationContext)
   // Goal date (you can change this as needed)
   const goalDate = new Date(2025, 3-1, 14, 12,0); // year, month, day, hours, minutes, seconds
   console.log(goalDate.toLocaleDateString());
@@ -16,6 +18,7 @@ export default function Home() {
     setTimeout(() => {
       document.querySelector(".header").classList.remove("full");
       document.querySelector(".content").classList.remove("full");
+      setIsAnimating(false)
     }, 1500);
 
     // Cleanup function to remove the event listener when the component unmounts
@@ -28,7 +31,7 @@ export default function Home() {
     <div className="home">
       {/* <StaticHeader /> */}
 
-      <div className="header full">
+      <div className={`header ${isAnimating && "full"}`}>
         <div className="logo">
           <Link to={"/"}>
             <img src={convergelogo} alt="Converge Health Logo" />
@@ -46,13 +49,13 @@ export default function Home() {
           converge in healthcare.
         </div>
         <div className="nav">
-          <Link to={"/abstract"}>
+          <a href="#">
             <button className="submit-abstract">
               <div className="overlay">
                 <div className="abstract-button">SUBMIT ABSTRACT</div>
               </div>
             </button>
-          </Link>
+          </a>
           <Link to={"/about"}>
             <button className="learn-more">
               <div className="overlay">

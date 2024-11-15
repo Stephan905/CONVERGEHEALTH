@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import MobileHome from './MobileHome';
+import MobileHome from './HomeMobile';
 import Home from './Home';
 
 

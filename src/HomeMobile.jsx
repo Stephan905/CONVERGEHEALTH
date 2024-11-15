@@ -1,17 +1,21 @@
-import React, { useEffect } from "react";
-import ReactPlayer from "react-player";
+import { useContext, useEffect } from "react";
 import convergelogo from "./images/convergehealth.png";
 import { Link } from "react-router-dom";
 import "./mobile.css";
 import Countdown from "./Countdown";
+import { AnimationContext } from "./AnimateContext";
 
 export default function MobileHome() {
+  const { isAnimating, setIsAnimating } = useContext(AnimationContext);
+
   useEffect(() => {
-    // Remove the 'full' class after 3 seconds
+    // Remove the 'full' class after seconds
     setTimeout(() => {
       document.querySelector(".mobile-header").classList.remove("full");
       document.querySelector(".mobile-nav").classList.remove("full");
-    }, 3000);
+      setIsAnimating(false)
+    }, 1500);
+    
 
     // Cleanup function to remove the event listener when the component unmounts
     return () => {
@@ -33,7 +37,7 @@ export default function MobileHome() {
         </div>
       </div>
 
-      <div className="mobile-nav full">
+      <div className={`mobile-nav ${isAnimating && "full"}`}>
       <Countdown goalDate={goalDate} />
         <div className="mobile-button">SUBMIT ABSTRACT</div>
         <Link to={"/about"}>
