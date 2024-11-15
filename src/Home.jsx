@@ -46,7 +46,7 @@ export default function Home() {
           converge in healthcare.
         </div>
         <div className="nav">
-          <a href="submit.convergehealth.cc">
+          <a href="https://submit.convergehealth.cc" target="_blank" rel="noopener noreferrer">
             <button className="submit-abstract">
               <div className="overlay">
                 <div className="abstract-button">SUBMIT ABSTRACT</div>
