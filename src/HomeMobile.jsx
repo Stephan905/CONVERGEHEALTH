@@ -38,7 +38,7 @@ export default function MobileHome() {
 
       <div className={`mobile-nav ${isAnimating && "full"}`}>
         <Countdown goalDate={goalDate} />
-        <a href="#">
+        <a href="submit.convergehealth.cc">
           <div className="mobile-button">SUBMIT ABSTRACT</div>
         </a>
         <Link to={"/about"}>
