@@ -1,5 +1,3 @@
-import React from "react";
-
 import convergelogo from "./images/convergehealth.png";
 
 export default function Abstract() {

@@ -1,7 +1,5 @@
-import "./App.css";
 import { Link } from "react-router-dom";
 import Countdown from "./Countdown";
-import StaticHeader from "./StaticHeader";
 import { useContext, useEffect } from "react";
 import convergelogo from "./images/convergehealth.png";
 import { AnimationContext } from "./AnimateContext";
@@ -29,7 +27,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* <StaticHeader /> */}
 
       <div className={`header ${isAnimating && "full"}`}>
         <div className="logo">

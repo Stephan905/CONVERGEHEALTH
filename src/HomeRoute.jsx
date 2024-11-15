@@ -3,7 +3,7 @@ import MobileHome from './HomeMobile';
 import Home from './Home';
 
 
-function App() {
+export default function HomeRoute() {
   
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -17,5 +17,3 @@ function App() {
     </>
   );
 }
-
-export default App;
