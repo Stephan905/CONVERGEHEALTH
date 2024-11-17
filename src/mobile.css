@@ -67,6 +67,7 @@ img {
 .mobile-nav {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   box-sizing: border-box;
   height: 79%;
   width: 75%;
