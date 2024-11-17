@@ -68,14 +68,18 @@ img {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: 70%;
-  width: 70%;
+  height: 79%;
+  width: 75%;
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
   z-index: 3;
   transition-delay: 1.5s;
   transition-duration: 1s;
+}
+
+.mobile-nav.false {
+  height: 70%;
 }
 
 .mobile-nav.full {
@@ -88,7 +92,7 @@ img {
 
 .mobile-button {
   background-color: white;
-  color:#4f00b6;
+  color: #4f00b6;
   padding: 8px;
   font-weight: bold;
   margin: 0 0 20px 0;
@@ -98,6 +102,6 @@ img {
 .more-info {
   padding: 8px;
   background-color: white;
-  color:#4f00b6;
+  color: #4f00b6;
   margin: 20px 0;
 }

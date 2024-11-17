@@ -1,9 +1,9 @@
 import { useContext, useEffect } from "react";
-import convergelogo from "./images/convergehealth.png";
+import convergelogo from "../images/convergehealth.png";
 import { Link } from "react-router-dom";
-import "./mobile.css";
-import Countdown from "./Countdown";
-import { AnimationContext } from "./AnimateContext";
+import "../mobile.css";
+import Countdown from "../Countdown";
+import { AnimationContext } from "../AnimateContext";
 
 export default function MobileHome() {
   const { isAnimating, setIsAnimating } = useContext(AnimationContext);

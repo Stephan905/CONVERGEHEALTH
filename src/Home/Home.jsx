@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Countdown from "./Countdown";
+import Countdown from "../Countdown";
 import { useContext, useEffect } from "react";
-import convergelogo from "./images/convergehealth.png";
-import { AnimationContext } from "./AnimateContext";
+import convergelogo from "../images/convergehealth.png";
+import { AnimationContext } from "../AnimateContext";
 
 export default function Home() {
   const {isAnimating, setIsAnimating } = useContext(AnimationContext)

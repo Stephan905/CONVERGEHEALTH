@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import AboutMobile from './AboutMobile';
 import About from './About';
 import { useContext } from "react";
-import { AnimationContext } from "./AnimateContext";
+import { AnimationContext } from "../AnimateContext";
 
 function AboutRoute() {
   const { setIsAnimating } = useContext(AnimationContext);

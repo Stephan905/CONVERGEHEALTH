@@ -1,10 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutRoute from "./AboutRoute.jsx";
+import AboutRoute from "./About/AboutRoute.jsx";
 import { AnimationProvider } from "./AnimateContext.jsx";
 import './index.css';
-import HomeRoute from "./HomeRoute.jsx";
+import HomeRoute from "./Home/HomeRoute.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -1,9 +1,15 @@
-import "./mobile.css";
+import "../mobile.css";
 import { Link } from "react-router-dom";
-import convergelogo from "./images/convergehealth.png"
-import map from "./images/SCWmap.png"
+import convergelogo from "../images/convergehealth.png"
+import map from "../images/SCWmap.png"
+import useEventbrite from "react-eventbrite-popup-checkout";
 
 export default function AboutMobile() {
+  const modalButtonCheckout = useEventbrite({
+    eventId: "1085764523919",
+    modal: true,
+    // onOrderComplete: handleOrderCompleted,
+  });
   return (
     <div className="mobile">
       <div className="mobile-header slim-view">
@@ -32,6 +38,15 @@ export default function AboutMobile() {
           cutting-edge research in Biology, Computer Science, and Engineering
           converge in healthcare.
         </div>
+        {modalButtonCheckout && (
+          <button
+            className="reserve-button"
+            id={modalButtonCheckout.id}
+            type="button"
+          >
+            RESERVE YOUR SPOT
+          </button>
+        )}
       </div>
     </div>
   );
