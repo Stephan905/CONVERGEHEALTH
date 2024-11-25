@@ -104,6 +104,13 @@ p {
 }
 
 
+.countdown-wrapper {
+  width: clamp(fit-content, 50%, 400px);
+}
+
+.countdown-wrapper-mobile {
+  width: 100%;
+}
 
 .countdown {
   background-color: #156082;
@@ -118,13 +125,24 @@ p {
   padding: 8px;
   background-color: white;
   color: black;
-  margin: 20px auto;
+  margin: 40px auto;
   font-weight: 400;
   width: 50%;
 }
 .nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.nav > div {
+  width: 300px;
+  margin: auto;
+}
+
+.nav > a {
+  margin: auto;
 }
 
 .simple-submit-abstract {
@@ -132,6 +150,10 @@ p {
   width: 300px;
   height: 80px;
   align-content: center;
+}
+
+div {
+  margin: auto;
 }
 
 .submit-abstract {

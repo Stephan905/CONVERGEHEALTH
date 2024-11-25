@@ -40,15 +40,15 @@ export default function Home() {
           <Countdown goalDate={goalDate} />
         </div>
 
-        <div className="nav">
-        <a href="https://submit.convergehealth.cc" target="_blank" rel="noopener noreferrer">
-          <div className="mobile-button">SUBMIT ABSTRACT</div>
-        </a>
         <div className="intro">
           CONVERGE HEALTH is set for March 14th, 2025! Join us and witness how
           cutting-edge research in Biology, Computer Science, and Engineering
           converge in healthcare.
         </div>
+        <div className="nav">
+        <a href="https://submit.convergehealth.cc" target="_blank" rel="noopener noreferrer">
+          <div className="mobile-button">SUBMIT ABSTRACT</div>
+        </a>
         <Link to={"/about"}>
           <div className="mobile-button">MORE INFORMATION</div>
         </Link>

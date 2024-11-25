@@ -45,23 +45,24 @@ export default function Countdown({ goalDate }) {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div>
-      {(
-        <>
-          {/* <div className="countdown">
-            <span>{days} Days </span>
-            <span>{hours} Hours </span>
-            <span>{minutes} Minutes </span>
-            <span>{seconds} Seconds </span>
-          </div> */}
-          <div className="countdown">
-            <div style={{ display: "inline-block", padding: "0 5px" }}>
-              COUNTDOWN
-            </div>
-            <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
+    <>
+      {
+        /* 
+        <div className="countdown">
+          <span>{days} Days </span>
+          <span>{hours} Hours </span>
+          <span>{minutes} Minutes </span>
+          <span>{seconds} Seconds </span>
+        </div> 
+        */
+        <div className="countdown">
+          <div style={{ display: "inline-block", padding: "0 5px" }}>
+            COUNTDOWN
           </div>
-        </>
-      )}
-    </div>
+          <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:
+          <span>{seconds}</span>
+        </div>
+      }
+    </>
   );
 }
