@@ -34,7 +34,7 @@ export default function AboutMobile() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe> */}
         <div className="more-info slim-view">
-          CONVERGE HEALTH is set for March 14th, 2025! Join us and witness how
+          CONVERGE HEALTH is set for March 14th, 2025! Join us in SCW and witness how
           cutting-edge research in Biology, Computer Science, and Engineering
           converge in healthcare.
         </div>
