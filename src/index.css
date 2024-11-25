@@ -58,12 +58,13 @@ p {
 }
 
 .countdown-wrapper {
-  width: clamp(300px, 40%, 100%);
+  width: 100%;
   margin: auto;
 }
 
 .content {
-  margin-top: 200px
+  margin-top: 200px;
+  width: 50%;
 }
 
 .map-wrapper {
@@ -104,6 +105,13 @@ p {
 }
 
 
+.countdown-wrapper {
+  width: clamp(fit-content, 50%, 400px);
+}
+
+.countdown-wrapper-mobile {
+  width: 100%;
+}
 
 .countdown {
   background-color: #156082;
@@ -112,13 +120,43 @@ p {
 }
 
 .intro {
+  box-sizing: border-box;
   font-size: larger;
   padding: 20px;
   margin-bottom: 40px;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  margin: 40px auto;
+  font-weight: 400;
+  width: 100%;
 }
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1px;
+}
+
+.nav > div {
+  width: 300px;
+  margin: auto;
+}
+
+.nav > a {
+  margin: 0;
+}
+
+.simple-submit-abstract {
+  background-color: white;
+  width: 300px;
+  height: 80px;
+  align-content: center;
+}
+
+div {
+  margin: auto;
 }
 
 .submit-abstract {

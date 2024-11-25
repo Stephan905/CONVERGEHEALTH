@@ -72,8 +72,8 @@ img {
   height: 79%;
   width: 75%;
   position: absolute;
-  bottom: 0;
-  margin-bottom: 20px;
+  bottom: 40px;
+  margin-bottom: 40px;
   z-index: 3;
   transition-delay: 1.5s;
   transition-duration: 1s;
@@ -93,16 +93,20 @@ img {
 
 .mobile-button {
   background-color: white;
-  color: #4f00b6;
+  color: black;
   padding: 8px;
   font-weight: bold;
   margin: 0 0 20px 0;
   letter-spacing: 5px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .more-info {
   padding: 8px;
   background-color: white;
-  color: #4f00b6;
+  color: black;
   margin: 20px 0 0 0;
 }
