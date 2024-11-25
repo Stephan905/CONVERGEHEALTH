@@ -58,12 +58,13 @@ p {
 }
 
 .countdown-wrapper {
-  width: clamp(300px, 40%, 100%);
+  width: 100%;
   margin: auto;
 }
 
 .content {
-  margin-top: 200px
+  margin-top: 200px;
+  width: 50%;
 }
 
 .map-wrapper {
@@ -119,6 +120,7 @@ p {
 }
 
 .intro {
+  box-sizing: border-box;
   font-size: larger;
   padding: 20px;
   margin-bottom: 40px;
@@ -127,13 +129,14 @@ p {
   color: black;
   margin: 40px auto;
   font-weight: 400;
-  width: 50%;
+  width: 100%;
 }
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  gap: 1px;
 }
 
 .nav > div {
@@ -142,7 +145,7 @@ p {
 }
 
 .nav > a {
-  margin: auto;
+  margin: 0;
 }
 
 .simple-submit-abstract {
