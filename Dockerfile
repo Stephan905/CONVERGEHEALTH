@@ -30,4 +30,5 @@ FROM nginx:latest AS runner
 WORKDIR /usr/share/nginx/html
 
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/dist .
+# COPY --from=builder /app/dist .
+COPY ./Prototype1_v1_2025-Mar-01_07-14-48PM_CustomizedView6773083208_strip.html index.html
